@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:maxHeight="200dp"
+    android:background="#000"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:id="@+id/myUpdateLayOut">
+
+    <LinearLayout
+        android:background="#FFF"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:id="@+id/exitArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="20dp"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/btnExit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="X" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="ADD CLASS"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="ID:"
+                android:textColor="#FFF"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CLASS:"
+                android:textColor="#FFF"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CODE:"
+                android:textColor="#FFF"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:enabled="false"
+                android:id="@+id/updateId"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:width="150dp"
+                android:background="#FFF"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:width="150dp"
+                android:background="#FFF" />
+
+            <EditText
+                android:id="@+id/edtCode"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:width="150dp"
+                android:background="#FFF"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add class" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
